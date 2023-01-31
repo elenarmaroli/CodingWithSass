@@ -1,5 +1,11 @@
 nav {
+  li {
+    color: $primary-color;
+  }
   a {
+    color: $primary-color;
+  }
+  a:visited{
     color: $primary-color;
   }
 }
@@ -11,25 +17,70 @@ header {
   text-align: center;
 }
 
+h1{
+  padding-top: 30px;
+  font-weight: bolder;
+}
+
 .card {
+  margin-top: 20px;
   border-radius: 5px;
+  background-color: $secondary-color;
 
   .img {
     background-size: cover;
     height: $large;
-    width: 100%;
     background-position: center;
   }
 }
 
 main {
   aside {
+    border: 1px solid $secondary-color;
+    padding: 10px;
   }
 }
 
 footer {
+  margin-top: 10px;
   background-color: $primary-color;
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  li{
+    list-style: none;
+  }
   a {
     color: white;
   }
+}
+
+@media (max-width: 768px){
+  body {
+    width: 100vw;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  article {
+    margin-top: 20px;
+    display: block;
+    width: 50vw;
+  }
+  aside {
+    display: block;
+    width: 50vw;
+  }
+}
+
+@media (min-width: 768px){
+  
 }
